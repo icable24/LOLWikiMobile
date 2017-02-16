@@ -8,7 +8,7 @@ function ($scope, $stateParams, $http) {
 	});
 }])
    
-.controller('casualCtrl', ['$scope', '$stateParams', 
+.controller('normalCtrl', ['$scope', '$stateParams', 
 function ($scope, $stateParams) {
 
 
