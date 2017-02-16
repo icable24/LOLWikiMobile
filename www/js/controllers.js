@@ -2,7 +2,7 @@ angular.module('app.controllers', [])
   
 .controller('championsCtrl', ['$scope', '$stateParams', '$http', 
 function ($scope, $stateParams, $http) {
-	$http.get("https://na.api.pvp.net/api/lol/static-data/na/v1.2/champion?api_key=RGAPI-d93f964b-45bf-4dde-ae5d-27ad98f130d9").success(function(response){
+	$http.get("https://global.api.pvp.net/api/lol/static-data/na/v1.2/champion?champData=image&api_key=RGAPI-d93f964b-45bf-4dde-ae5d-27ad98f130d9").success(function(response){
 		$scope.champion = response.data;
 		console.log($scope.champion); 
 	});
