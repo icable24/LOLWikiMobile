@@ -16,10 +16,10 @@ angular.module('app.routes', [])
     controller: 'championsCtrl'
   })
 
-  .state('casual', {
+  .state('normal', {
     url: '/page3',
     templateUrl: 'templates/casual.html',
-    controller: 'casualCtrl'
+    controller: 'normalCtrl'
   })
 
   .state('ranked', {
