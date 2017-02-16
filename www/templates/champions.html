@@ -1,0 +1,14 @@
+<ion-view title="Champions" id="page2">
+  <div>
+    <ion-content padding="true" class="has-header">
+      <ion-list>
+        <ion-item ng-repeat="item in champion" class="item-thumbnail-left item-icon-right item-text-wrap">
+          <img src="http://ddragon.leagueoflegends.com/cdn/7.3.3/img/champion/{{item.name}}.png" alt="{{item.name}}">
+          <h2>{{item.name}}</h2>
+          <div>{{item.title}}</div>
+        </ion-item>
+      </ion-list>  
+    </ion-content>
+  </div>
+  
+</ion-view>
