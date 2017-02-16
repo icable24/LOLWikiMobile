@@ -43,8 +43,8 @@ function ($scope, $stateParams) {
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
 function ($scope, $stateParams, $http) {
 	$http.get("https://na.api.pvp.net/api/lol/na/v1.3/game/by-summoner/44690886/recent?api_key=RGAPI-d93f964b-45bf-4dde-ae5d-27ad98f130d9").success(function(response){
-		$scope.champion = response.games;
-		console.log($scope.champion); 
+		$scope.games = response.games;
+		console.log($scope.games); 
 	});
 }])
  
