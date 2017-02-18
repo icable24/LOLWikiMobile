@@ -1,0 +1,19 @@
+<ion-view title="Normal" id="page3">
+  <div>
+    <ion-content padding="true" class="has-header">
+      <ion-list>
+        <ion-item ng-repeat="item in games" class="item-thumbnail-left item-icon-right item-text-wrap">
+	    			<label for="">Game Mode:</label>
+	    			<h2>{{item.gameMode}}</h2>
+	    			<label for="">Game Type:</label>
+	    			<h2>{{item.gameType}}</h2>
+	        <div>
+	          	<ion-item ng-repeat="item in item.fellowPlayers">
+	          		<h2>{{ item.championId }}</h2>
+	          	</ion-item>
+            </div>
+        </ion-item>
+      </ion-list>  
+    </ion-content>
+  </div>
+</ion-view>

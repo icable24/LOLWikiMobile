@@ -10,15 +10,21 @@ angular.module('app.routes', [])
     
   
 
-      .state('champions', {
+  .state('champions', {
     url: '/champions',
     templateUrl: 'templates/champions.html',
     controller: 'championsCtrl'
   })
 
+  .state('champions.detail', {
+    url: '/champions/:champId',
+    templateUrl: 'templates/detail.html',
+    controller: 'championsCtrl'
+  })
+
   .state('normal', {
     url: '/page3',
-    templateUrl: 'templates/casual.html',
+    templateUrl: 'templates/normal.html',
     controller: 'normalCtrl'
   })
 

@@ -1,13 +1,32 @@
 <ion-view title="Home" id="page6">
   <ion-content padding="true" class="has-header">
-  <label class="item item-input" id="home-search1">
-        <i class="icon ion-search placeholder-icon"></i>
-        <input type="search" placeholder="Search Summoners...">
-      </label>
-    <form id="home-form1" class="list"> 
-    </form>
-    <div>
-      <img src="img/LOL.png" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
+    <ion-list>
+        <ion-item class="item-thumbnail-left item-icon-right item-text-wrap">
+          <img src="http://ddragon.leagueoflegends.com/cdn/7.3.3/img/profileicon/1132.png">
+          <div>  
+            <h1>Player</h1>
+            <label><h2>Bard Dauble Stun</h2></label>
+            <label><h2>Level: 30</h2></label>
+          </div>
+        </ion-item>
+        <ion-item ng-repeat="item in summary.playerStatSummaries">
+          <div>
+            <label>Game Mode: </label>
+            <h2>{{ item.playerStatSummaryType }}</h2>
+          </div>
+          <div>
+            <label>Wins: </label>
+            <h2>{{ item.wins }}</h2>
+          </div>
+          <div>
+            <label>Losses: </label>
+            <h2>{{ item.losses }}</h2>
+          </div>
+          <div>
+            <label>Win Rate: </label>
+            <h2>{{ item.wins / (item.wins + item.losses) * 100  }}%</h2>
+          </div>
+        </ion-item>
+      </ion-list>    
   </ion-content>
 </ion-view>
