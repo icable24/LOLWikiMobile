@@ -46,7 +46,14 @@ angular.module('app.routes', [])
     controller: 'homeCtrl'
   })
 
+
+    
+
 $urlRouterProvider.otherwise('')
+
+
+
+
 
   
 

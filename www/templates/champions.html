@@ -1,12 +1,14 @@
 <ion-view title="Champions" id="page2">
   <div>
-    <!--     <label class="item-input-wrapper" id="home-search1">
-        <i class="icon ion-search placeholder-icon"></i>
-        <input type="search" ng-model="query" placeholder="Search Summoners...">
-    </label> -->
+       
     <ion-content padding="true" class="has-header">
+     <label class="item item-input" id="home-search1">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" ng-model="champion"  placeholder="Search Summoners...">
+        </label>
+
       <ion-list>
-        <ion-item ng-repeat="item in champion" class="item-thumbnail-left item-icon-right item-text-wrap">
+        <ion-item ng-repeat="item in champion " class="item-thumbnail-left item-icon-right item-text-wrap">
           <img src="http://ddragon.leagueoflegends.com/cdn/7.3.3/img/champion/{{item.image.full}}" alt="{{item.name}}">
           <h2>{{item.name}}</h2>
           <div>{{item.title}}</div>

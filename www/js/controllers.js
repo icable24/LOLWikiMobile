@@ -47,4 +47,7 @@ function ($scope, $stateParams, $http) {
 		console.log($scope.games); 
 	});
 }])
+
+
+
  
