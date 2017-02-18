@@ -24,7 +24,7 @@ angular.module('app.routes', [])
 
   .state('normal', {
     url: '/page3',
-    templateUrl: 'templates/casual.html',
+    templateUrl: 'templates/normal.html',
     controller: 'normalCtrl'
   })
 
