@@ -1,11 +1,10 @@
-<ion-view title="Champions" id="page2">
+<ion-view title="Details" id="page7 ">
   <div>
     <ion-content padding="true" class="has-header">
-      <ion-list>
-        <ion-item ng-repeat="item in champion" class="item-thumbnail-left item-icon-right item-text-wrap" href="#/champions/{{item.id}}">
+      <ion-list class="list-inset">
+        <ion-item ng-repeat="item in champion | filter: { name: whichChampion }" class="item-thumbnail-left item-icon-right item-text-wrap" href="champions.detail">
           <img src="http://ddragon.leagueoflegends.com/cdn/7.3.3/img/champion/{{item.image.full}}" alt="{{item.name}}">
           <h2>{{item.name}}</h2>
-          <div>{{item.title}}</div>
         </ion-item>
       </ion-list>  
     </ion-content>
